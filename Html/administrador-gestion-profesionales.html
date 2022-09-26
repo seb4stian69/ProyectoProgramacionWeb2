@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <title>Administrador</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="logo">
+            <a class="navbar-brand" href="#">ACME</a>
+        </div>
+        
+        <div class="recordatorio">
+            <a class="navbar-brand" href="#">Gestión Profesionales </a>
+        </div>
+
+        <div class="sec">
+            <a class="navbar-brand" href="administrador-menu.html">Administrador </a>
+        </div>
+        
+        <div>
+            <a class="navbar-brand" href="#">Cerrar Sesión </a>
+
+        </div>
+        
+    </nav>
+    <form style=" border: 0.1em  #292b2c solid; margin-top:5em; margin-left:15em; margin-right:15em;padding:5em;">
+        <div>
+            <h2>Datos del Profesional </h3>
+            <div style="display:flex;margin-top:2em">
+                <div style="margin-right:1em">
+                    <select name="select" style="margin-top:4%">
+                        <option value="value1"selected>C.C</option>
+                        <option value="value3">C.E</option>
+                    </select>
+                </div>
+                <div>
+                    <input style="width:28.5em"type = "text" placeholder="Número de identificación">
+                </div>
+                
+                  
+            </div>
+            <div>
+                <div style="margin-top: 2em;">
+                    <input type = "text" placeholder="Nombres">
+                    <input type = "text" placeholder="Apellidos" >
+                      
+                </div>
+                <div class="datos-paciente">
+                    <input class="data-paciente" type = "text" placeholder="Dirección de Residencia">
+    
+                </div>
+                <div class="datos-paciente">
+                    <input class="data-paciente"  type = "text" placeholder="Número de Celular ">
+    
+                </div>
+                <div class="datos-paciente">
+                    <input class="data-paciente"  type = "text" placeholder="Correo Electrónico">
+    
+                </div>
+
+                <div class="datos-paciente">
+                    <h4>Estudios</h4>
+                    Tipo de estudio 
+                     <select name="tpo-estudio" style="margin-top:2%">
+                        <option value="value1"selected>Pregrado</option>
+                        <option value="value3">Postgrado</option>
+                        <option value="value3">Especialización</option>
+                        <option value="value3">Maestría</option>
+                        <option value="value3">Doctorado</option>
+                        <option value="value3">Diplomado</option>
+                        <option value="value3">Curso</option>
+                    </select>
+
+    
+                </div>
+                <div class="datos-paciente">
+                        <input class="data-paciente"  type = "text" placeholder="Nombre de estudio">
+                        
+                </div>
+                <div class="datos-paciente">
+                    <input class="data-paciente"  type = "text" placeholder="Nombre de institución">
+                    
+                </div>
+                <div class="datos-paciente">
+                    Fecha de inicio <input type="date" style="margin-right: 40em;">
+                    Fecha Final <input type="date">
+                </div>
+                <div class="datos-paciente">
+                    <input type="button" value="Añadir otro estudio" class="btn btn-secondary" style="width:20%">
+                </div>
+                <div class="datos-paciente">
+                    <h4>Experiencia Laboral</h4>
+                   
+    
+                </div>
+                <div class="datos-paciente">
+                        <input class="data-paciente"  type = "text" placeholder="Nombre de empresa">
+                        
+                </div>
+                <div class="datos-paciente">
+                    <input class="data-paciente"  type = "text" placeholder="Cargo desempeñado">
+                    
+                </div>
+                <div class="datos-paciente">
+                    Fecha de inicio <input type="date" style="margin-right: 40em;">
+                    Fecha Final <input type="date">
+                </div>
+                <div class="datos-paciente">
+                    <input type="button" value="Añadir otro trabajo" class="btn btn-secondary" style="width:20%">
+                </div>
+                <div class="datos-paciente">
+                    <input class="data-paciente"  type = "text" placeholder="Usuario">
+                    
+            </div>
+            <div class="datos-paciente">
+                <input class="data-paciente"  type = "text" placeholder="Contraseña">
+                
+            </div>
+
+            <div class="datos-paciente">
+                <input class="data-paciente"  type = "text" placeholder="Confirmar Contraseña">
+                
+            </div>
+            </div>
+            <div class="datos-paciente">
+                <input type="button" value="Registrar" class="btn btn-secondary" style="width:20%; margin-left: 60em;">
+            </div>
+
+        </div>
+
+    </form>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

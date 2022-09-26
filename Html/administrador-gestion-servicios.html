@@ -32,34 +32,57 @@
       <div>
         <div style="display:flex;">
           <div>Categorías</div>
-          <div><input type="text"></div>
+          <div><input type="text" style="width:45em ;margin-left: 2.5em;"></div>
           
         </div>
-        <div style="display:flex;">
+        <div style="display:flex;margin-top: 2em;">
           <div>Tipos</div>
-          <div><input type="text"></div>
+          <div><input type="text" style="width:45em ;margin-left: 5em;"></div>
         </div>
-        <div style="display:flex;">
+        <div style="display:flex;margin-top: 2em;">
           <div>descripción</div>
-          <div><input type="text"></div>
+          <div><input type="text" style="width:45em ;margin-left: 2.3em;height:10em;"></div>
         </div>
       </div>
         
         
-        <h5>Agregar Elementos </h5>
+        <h5 style="margin-top: 2em; text-align: center;margin-bottom: 5em;">Agregar Elementos </h5>
         <div>
-            <div  class="datos-paciente">
-                <input type="text" placeholder="Categorías"  class="data-paciente">
+            <div style="display: flex ;">
+              <div style="margin-right: 2em ;">Elementos</div>
+              <input type="text" >
+              <div style="margin-left: 5em;margin-right: 2em ;"">Costos</div>
+              <input type="text" >
+              <div style="margin-left: 5em;margin-right: 2em ;"">Agregar Otro Elemento</div>
+              <input type="button" value="+" >
+
             </div>
-            <div class="datos-paciente">
-                <input type="text" placeholder="Tipos" class="data-paciente">   
+            <div style="display: flex ;margin-top: 2em;">
+              <div style="margin-right: 2.5em ;">Maquinas</div>
+              <input type="text" >
+              <div style="margin-left: 5em;margin-right: 2em ;"">Costos</div>
+              <input type="text" >
+            
             </div>
-            <div class="datos-paciente">
-                <input type="text" placeholder="descripción" class="data-paciente">
+            <div style="display: flex ;margin-top: 2em;">
+              <div style="margin-right: 1.8em ;">Costo Total</div>
+              <input type="text" >
+             
             </div>
-            <div class="datos-paciente">
-              <button type="button" class="btn btn-secondary" style="width:20%;margin-left:60em;">Guardar</button> 
-          </div>
+            <div style="display: flex ;margin-top: 2em;">
+              <div style="margin-right: 0.6em ;">%De Ganancia</div>
+              <input type="text" >
+             
+            </div>
+            <div style="display: flex ;margin-top: 2em;">
+              <div style="margin-right: 4.3em ;">Precio</div>
+              <input type="text" >
+             
+            </div>
+            <div style="display: flex ;margin-top: 2em;margin-left: 65em;">
+              <button class="btn btn-secondary" style="width: 20em">Guardar</button>
+             
+            </div>
             
         </div>
        
@@ -72,41 +95,19 @@
       <table class="table table-striped table-light" style="margin-left:2em ;width:95%;border:1px solid; ">
         <thead>
           <tr>
-            <th scope="col">Codigo</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Costo</th>
+            <th scope="col">Elementos</th>
+            <th scope="col">Tipos de Servicios</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Elementos</th>
+            <th scope="col">Costo Maquinas</th>
+            <th scope="col">Costo Total</th>
+            <th scope="col">Porcentaje</th>
+            <th scope="col">Precio</th>
             <th scope="col">Acciones</th>
-            
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Manuel</td>
-            <td>Salcedo</td>
-            <td>2032323</td>
-            
-            
-          </tr>
           
-          
-          <tr>
-            <th scope="row">2</th>
-            <td>Manuel</td>
-            <td>Salcedo</td>
-            <td>2032323</td>
-            
-          </tr>
-
-
-          <tr>
-            <th scope="row">3</th>
-            <td>Manuel</td>
-            <td>Salcedo</td>
-            <td>2032323</td>
-           
-
-          </tr>
         </tbody>
       </table>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
