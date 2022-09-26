@@ -35,17 +35,17 @@
                 
                 <div class="contenedor-buscador">
                     <div class="Buscador" style="border:1px;">
-                        <input type="text" placeholder="Numero identificación Cliente " class="busca" style="border:1px solid gray">
+                        <input id="idCliente" type="text" placeholder="Numero identificación Cliente " class="busca" style="border:1px solid gray">
                         
                     </div>
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="number" placeholder="Numero Sesión " class="busca" style="border:1px solid gray">
+                    <input id="numSesion" type="number" placeholder="Numero Sesión " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div style="border:1px;margin-top: 2em;">
-                    <button type="button" class="btn btn-secondary" style="width:20%;">Buscar</button> 
+                    <button onclick="busqueda()" type="button" class="btn btn-secondary" style="width:20%;">Buscar</button> 
                 </div>
             </div>
         </form>
@@ -57,66 +57,66 @@
                     
                     <div class="Buscador" style="border:1px;">
                         
-                        <input type="text" placeholder="Numero identificación " class="busca" style="border:1px solid gray">
+                        <input id="numeroId"type="text" placeholder="Numero identificación " class="busca" style="border:1px solid gray">
                         
                     </div>
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="number" placeholder="Numero de Sesión " class="busca" style="border:1px solid gray">
+                    <input id="numSesions"type="number" placeholder="Numero de Sesión " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Nombre " class="busca" style="border:1px solid gray">
+                    <input id="nombre"type="text" placeholder="Nombre " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Apellidos " class="busca" style="border:1px solid gray">
+                    <input id="apellidos"type="text" placeholder="Apellidos " class="busca" style="border:1px solid gray">
                     
                 </div> 
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Peso " class="busca" style="border:1px solid gray">
+                    <input id="peso"type="text" placeholder="Peso " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Derivación " class="busca" style="border:1px solid gray">
+                    <input id="derivacion"type="text" placeholder="Derivación " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Diagnostico " class="busca" style="border:1px solid gray">
+                    <input id="diagnostico"type="text" placeholder="Diagnostico " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Resultados " class="busca" style="border:1px solid gray">
+                    <input id="resultados"type="text" placeholder="Resultados " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Presión Arterial " class="busca" style="border:1px solid gray">
+                    <input id="presionaArterial"type="text" placeholder="Presión Arterial " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Tipo de servicio " class="busca" style="border:1px solid gray">
+                    <input id="tipoServicio"type="text" placeholder="Tipo de servicio " class="busca" style="border:1px solid gray">
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input type="text" placeholder="Descripción " class="busca" style="border:1px solid gray">
+                    <input id="descripcion"type="text" placeholder="Descripción " class="busca" style="border:1px solid gray">
                     
                 </div>
                 
                 
                 
-
-                <div style="border:1px;margin-top: 2em;">
+                <!-- <div style="border:1px;margin-top: 2em;">
                     <button type="button" class="btn btn-secondary" style="width:20%;margin-left:40em;">Guardar</button> 
-
-                </div>
+                </div> que se supone que hace esto weon :| -->
+            
             </div>
         </form>
 
 
 
     </div>
-   
+    
+    <script src="../Js/Administrador/GestionEstadoEvolucion.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
