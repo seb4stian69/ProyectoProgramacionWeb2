@@ -34,13 +34,13 @@
             </div>
            
             <div style="margin-top: 3em;margin-left: 25em;">
-                <input type="text" placeholder="Código" style="width: 30em;height: 3em;">
+                <input id="codigoCategoria" type="text" placeholder="Código" style="width: 30em;height: 3em;">
             </div>
             <div style="margin-top: 2em ;margin-left: 25em;">
-                <input type="text" placeholder="Nombre" style="width: 30em;height: 3em;">
+                <input id="nombreCategoria" type="text" placeholder="Nombre" style="width: 30em;height: 3em;">
             </div>
             <div style="margin-bottom: 2em; margin-top:2em">
-                <button type="button" class="btn btn-secondary" style="width:20%;margin-left:40em;">Guardar</button> 
+                <button onclick="agregarCategorias()" type="button" class="btn btn-secondary" style="width:20%;margin-left:40em;">Guardar</button> 
 
             </div>
         </div>
@@ -55,13 +55,9 @@
             <th scope="col">Acciones</th>
           </tr>
         </thead>
-        <tbody>
-          
-            
-
-          </tr>
-        </tbody>
+        <tbody id="categoriasTabla"></tbody>
       </table>
+      <script src="../Js/Administrador/GestionarCategorias.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
