@@ -64,7 +64,7 @@ const enviarDatosDelPaciente = () =>{
         }
 
     // Almacenamiento en el localStorage
-        localStorage.setItem(textNumeroIdField, JSON.stringify(requestObject))
+        localStorage.setItem(`RegistroClienteSecretaria - ${textNumeroIdField}`, JSON.stringify(requestObject))
 
     alert("Historial clinico enviado")
 
