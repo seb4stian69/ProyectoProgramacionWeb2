@@ -25,8 +25,8 @@ header{
 .Buscador{
     width: 45em;
     height: 3em;
-    
-  
+    display: flex;
+    flex-direction: row;
 }
 .contenedor-buscador{
     display:flex;
@@ -39,12 +39,11 @@ header{
     height: 100%;
     height:3em;
     border:none;
-    
+    border: 1px solid black;
 }
 .lupita{
     width:4.25em;
     height:100%;
-    
 }
 .menu-container{
     display:flex;
