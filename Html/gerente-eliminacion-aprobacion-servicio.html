@@ -33,6 +33,7 @@
     <form action="" class="formulario-historial-clinico">
       
       <div>
+
         <div class="datos-paciente">
           <select class="form-select" aria-label="Default select example">
             <option selected>Servicio</option>
@@ -61,6 +62,16 @@
         
         
         <input style="margin-top: 2em;" type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Enviar">
+        <div style="margin-right:1em">
+          <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
+      </div>
+
+      <div class="datos-paciente">
+        <input id="detalles" type="text" placeholder="Detalles del servicio" class="data-paciente">
+      </div>
+        
+      <input onclick="enviar()" type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Enviar">
+
 
       </div>
         
@@ -93,6 +104,7 @@
 
     </table>
     
+    <script src="../Js/Gerente/EliminacionAprobacionServicios.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
