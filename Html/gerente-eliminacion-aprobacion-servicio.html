@@ -33,6 +33,35 @@
     <form action="" class="formulario-historial-clinico">
       
       <div>
+
+        <div class="datos-paciente">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Servicio</option>
+            <option value="1">Servicio Uno</option>
+            <option value="2">Servicio Dos</option>
+            <option value="3">Servicio Tres</option>
+          </select>
+        </div>
+        <div class="datos-paciente">
+          <input type="text" placeholder="Precio" class="data-paciente">
+        </div>
+        <div class="datos-paciente">
+          <input type="text" placeholder="Detalles del servicio" class="data-paciente">
+        </div>
+        <div class="datos-paciente">
+          <input type="text" placeholder="%Ganancia" class="data-paciente">
+        </div>
+        <div class="datos-paciente">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Materia Prima</option>
+            <option value="1">Materia Prima Uno</option>
+            <option value="2">Materia Prima Dos</option>
+            <option value="3">Materia Prima Tres</option>
+          </select>
+        </div>
+        
+        
+        <input style="margin-top: 2em;" type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Enviar">
         <div style="margin-right:1em">
           <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
       </div>
@@ -43,11 +72,37 @@
         
       <input onclick="enviar()" type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Enviar">
 
+
       </div>
         
         
 
     </form>
+    <table class="table table-striped table-light" style="width:95%;border:1px solid;margin-top:5em ;margin-left: 5em; ">
+
+      <thead>
+        <tr>
+          <th scope="col">Codigo de servicio</th>
+          <th scope="col">Nombre del sercicio</th>
+          <th scope="col">Detalles del servicio</th>
+          <th scope="col">%Ganancia</th>
+          <th scope="col">Materia Prima</th>
+          <th scope="col">editar/Confirmar </th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td id="codigoServicio"></td>
+          <td id="nombreServicio"></td>
+          <td id="descripcion"></td>
+          <td id="precio"></td>
+        </tr>
+
+      </tbody>
+
+    </table>
     
     <script src="../Js/Gerente/EliminacionAprobacionServicios.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
