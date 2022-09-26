@@ -33,14 +33,15 @@
     <form action="" class="formulario-historial-clinico">
       
       <div>
-        <div class="datos-paciente">
-          <input type="text" placeholder="Servicio =>(ComboBox)" class="data-paciente" >
-        </div>
-        <div class="datos-paciente">
-          <input type="text" placeholder="Detalles del servicio" class="data-paciente">
-        </div>
+        <div style="margin-right:1em">
+          <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
+      </div>
+
+      <div class="datos-paciente">
+        <input id="detalles" type="text" placeholder="Detalles del servicio" class="data-paciente">
+      </div>
         
-        <input type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Enviar">
+      <input onclick="enviar()" type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Enviar">
 
       </div>
         
@@ -48,6 +49,7 @@
 
     </form>
     
+    <script src="../Js/Gerente/EliminacionAprobacionServicios.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
