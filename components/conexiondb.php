@@ -1,31 +1,21 @@
-<?php 
+<?php
 
-require("../settings/configuraciones.php");
+    class ConexionBaseDatos {
 
-class ConexionBD {
+        private $connection;
 
-    private $conexion;
+        public function __construct(){
+            $this->connection = mysqli_connect("127.0.0.1", "root", "root", "AcmeClinica", 3306);
+        }
+    
+        public function crearConexion(){
+            return $this->connection;
+        }
+    
+        public function cerrarConexion(){
+            $this->connection->close();
+        }
 
-    function __construct() {
-
-        $conexion = new mysqli_connect($servidor, $usuario, 
-        $contraseña,$baseDatos,$puerto);
     }
-
-    public getConexion() {
-
-        return $conexion;
-
-    }
-
-    public cerrarConexion() {
-
-        $conexion->close();
-    }
-
-
-
-
-}
 
 ?>

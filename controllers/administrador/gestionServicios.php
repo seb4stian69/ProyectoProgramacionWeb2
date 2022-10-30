@@ -5,13 +5,13 @@
 
    class ControladorPaciente extends ConexionBD {
 
-        public guardar(){}
+        public function guardar(){}
 
-        public eliminar(){}
+        public function eliminar(){}
       
-        public listar(){}
+        public function listar(){}
         
-        public buscarRegistro(){};
+        public function buscarRegistro(){}
 
    }
  
