@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <title>Profesional</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="logo">
+            <a class="navbar-brand" href="#">ACME</a>
+        </div>
+        
+        <div class="recordatorio">
+            <a class="navbar-brand" href="#">Tratramiento </a>
+        </div>
+
+        <div class="sec">
+            <a class="navbar-brand" href="profesional-menu.html">Profesional </a>
+        </div>
+        
+        <div>
+            <a class="navbar-brand" href="index.html">Cerrar Sesión </a>
+
+        </div>
+        
+    </nav>
+
+    <form class="formulario-historial-clinico">
+      <input id="idCliente" type="text" name="" id="" placeholder="Numero de identidicador" style="width: 70% ; margin-left: 10em;">
+
+      <div style="display: flex ;">
+        <input id="nombres" type="text" name="" id="" placeholder="Nombres" style="width: 30% ; margin-left: 10em;margin-top: 2em;">
+        <input id="apellidos" type="text" name="" id="" placeholder="Apellido" style="width: 30% ; margin-left: 8em;margin-top: 2em;">
+      </div>
+      <div style="display: flex ;">
+        <input id="edad" type="text" name="" id="" placeholder="Edad" style="width: 30% ; margin-left: 10em;margin-top: 2em;">
+        <input id="peso" type="text" name="" id="" placeholder="Peso" style="width: 30% ; margin-left: 8em;margin-top: 2em;">
+      </div>
+      <input id="correo" type="text" name="" id="" placeholder="Correo Electrónico" style="width: 70% ; margin-left: 10em; margin-top: 2em;">
+
+      <div style="margin-left:10em; margin-top: -1.4em;">
+        <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
+      </div>
+
+      <input id="detallesServicio" type="text" name="" id="" placeholder="Detalles de Servicio" style="width: 70% ; margin-left: 10em;height: 8em;margin-top: 2em;">
+
+      <div style="display: flex ;">
+        <input id="numeroSesiones" type="text" name="" id="" placeholder="Número de Sesiones" style="width: 30% ; margin-left: 10em;margin-top: 2em;">
+        <input id="numeroSesionesFaltantes" type="text" name="" id="" placeholder="Número de Seseiones faltantes" style="width: 30% ; margin-left: 8em;margin-top: 2em;">
+        
+      </div>
+            
+      </div>
+      <input onclick="enviarTratamiento()" type="button" style="display:flex;margin-top: 2em; margin-left: 20em;width: 30em;" type="button" class="btn btn-secondary" value="Enviar">
+    </form>
+    <script src="../Js/Profesional/Tratamiento.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

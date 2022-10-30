@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+    <title>Gerente</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="logo">
+            <a class="navbar-brand" href="#">ACME</a>
+        </div>
+        
+        <div class="recordatorio">
+            <a class="navbar-brand" href="#">Reporte 2  </a>
+        </div>
+
+        <div class="sec">
+            <a class="navbar-brand" href="gerente-menu.html">Gerente </a>
+        </div>
+        
+        <div>
+            <a class="navbar-brand" href="index.html">Cerrar Sesión </a>
+
+        </div>
+        
+    </nav>
+
+    <div style="margin-right:1em">
+      <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
+      <button onclick="filterChange()">Buscar</button>
+    </div>
+    
+    <canvas id="MiGrafica" width="100" height="100"></canvas>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+
+  <script>
+
+    // Select field
+    let arrayTipoId = ['Tipo uno','Tipo dos','Tipo tres'];
+    let selectTipoIdField = document.getElementById('selectTipoIdField');
+
+    arrayTipoId.forEach( data => {
+
+        let option = document.createElement('option');
+        option.id=`${data}`
+        option.innerHTML = data;
+
+        selectTipoIdField?.append(option);
+
+    });
+
+    /* Funcionalidad data de tipo id cambiado */
+    let tipoIdValue=arrayTipoId[0];
+    const cambiarTipoId = () =>{ tipoIdValue = document.getElementById("selectTipoIdField")?.value; }
+
+    let canvas = document.getElementById("MiGrafica").getContext("2d");
+
+    let servicioUno = ["Mes 1","Mes 2","Mes 3","Mes 4"];
+    let servicioUnoData = [12,34,8,22]
+    let servicioDos = ["servicioDos 1","servicioDos 2","servicioDos 3","servicioDos 4"];
+    let servicioDosData = [22,10,14,33]
+    let servicioTres = ["servicioTres 1","servicioTres 2","servicioTres 3","servicioTres 4"];
+    let servicioTresData = [32,4,24,16]
+
+    let selected= sessionStorage.getItem("selectedFilterReportTwo")||"Tipo uno";
+
+    var chart = new Chart(canvas,{
+      type: "bar",
+      data:{
+        labels: (selected=="Tipo uno")?servicioUno:(selected=="Tipo dos")?servicioDos:servicioTres,
+        datasets:[
+          {
+            label: "Importe por tipo de servicio",
+            backgroundColor:"rgb(0,0,0)",
+            borderColor:"rgb(0,255,0)",
+            data:(selected=="Tipo uno")?servicioUnoData:(selected=="Tipo dos")?servicioDosData:servicioTresData
+          }
+        ]
+      }
+    })
+
+    function filterChange(){
+
+      sessionStorage.setItem("selectedFilterReportTwo",tipoIdValue)
+      location.reload()
+
+    }
+
+  </script>
+
+
+</html>

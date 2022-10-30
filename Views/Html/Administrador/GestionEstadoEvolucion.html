@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <title>Administrador</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="logo">
+            <a class="navbar-brand" href="#">ACME</a>
+        </div>
+        
+        <div class="recordatorio">
+            <a class="navbar-brand" href="#">Estado de evolución por Sesión </a>
+        </div>
+
+        <div class="sec">
+            <a class="navbar-brand" href="administrador-menu.html">Administrador </a>
+        </div>
+        
+        <div>
+            <a class="navbar-brand" href="index.html">Cerrar Sesión </a>
+
+        </div>
+        
+    </nav>
+    <div style="border:1px solid gray ;padding:4em;margin-right: 30em ;margin-left: 20em;margin-top: 5em;">
+        <form class="form-buscar" action="">
+        
+            <div >
+                <h3>Buscar</h3>
+                
+                <div class="contenedor-buscador">
+                    <div class="Buscador" style="border:1px;">
+                        <input id="idCliente" type="text" placeholder="Numero identificación Cliente " class="busca" style="border:1px solid gray">
+                        
+                    </div>
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="numSesion" type="number" placeholder="Numero Sesión " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div style="border:1px;margin-top: 2em;">
+                    <button onclick="busqueda()" type="button" class="btn btn-secondary" style="width:20%;">Buscar</button> 
+                </div>
+            </div>
+        </form>
+        
+        <form class="form-buscar" action="">
+            <div >
+                <div class="contenedor-buscador">
+
+                    
+                    <div class="Buscador" style="border:1px;">
+                        
+                        <input id="numeroId"type="text" placeholder="Numero identificación " class="busca" style="border:1px solid gray">
+                        
+                    </div>
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="numSesions"type="number" placeholder="Numero de Sesión " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="nombre"type="text" placeholder="Nombre " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="apellidos"type="text" placeholder="Apellidos " class="busca" style="border:1px solid gray">
+                    
+                </div> 
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="peso"type="text" placeholder="Peso " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="derivacion"type="text" placeholder="Derivación " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="diagnostico"type="text" placeholder="Diagnostico " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="resultados"type="text" placeholder="Resultados " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="presionaArterial"type="text" placeholder="Presión Arterial " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="tipoServicio"type="text" placeholder="Tipo de servicio " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                <div class="Buscador" style="border:1px;margin-top: 2em;">
+                    <input id="descripcion"type="text" placeholder="Descripción " class="busca" style="border:1px solid gray">
+                    
+                </div>
+                
+                
+                
+                <!-- <div style="border:1px;margin-top: 2em;">
+                    <button type="button" class="btn btn-secondary" style="width:20%;margin-left:40em;">Guardar</button> 
+                </div> que se supone que hace esto weon :| -->
+            
+            </div>
+        </form>
+
+
+
+    </div>
+    
+    <script src="../Js/Administrador/GestionEstadoEvolucion.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
