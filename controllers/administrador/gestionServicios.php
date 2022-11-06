@@ -1,6 +1,7 @@
 <?php  
 
     require("../componentes/conexionbd.php");
+    require("interfazcontrolador.php");
 
 
    class ControladorPaciente extends ConexionBD {

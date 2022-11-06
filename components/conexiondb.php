@@ -5,7 +5,10 @@
         private $connection;
 
         public function __construct(){
-            $this->connection = mysqli_connect("127.0.0.1", "root", "root", "AcmeClinica", 3306);
+            require("../settings/configuraciones.php");
+            $this->conexion = mysqli_connect($servidor, $usuario, 
+            $contraseña,$baseDatos,$puerto);
+    
         }
     
         public function crearConexion(){
