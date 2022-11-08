@@ -115,16 +115,7 @@ clientesEncontrandos.forEach( data => {
     let td_hora = document.createElement('td');
     td_hora.innerHTML = data.hora;
 
-    let td_acciones = document.createElement('td');
-    let buttonNotificar = document.createElement('button');
-    buttonNotificar.innerHTML = 'Notificar';
-    buttonNotificar.addEventListener('click', ()=>alert(`Notificacion enviado al correo ${data.correo}`))
-    let buttonConfirmar = document.createElement('button');
-    buttonConfirmar.innerHTML = 'Confirmar';
-    buttonConfirmar.addEventListener('click', ()=>alert(`Cita confirmada`))
-    td_acciones.append(buttonNotificar,buttonConfirmar)
-
-    tr.append(th,td_nombre,td_apellido,td_numCelular,td_correo,td_fecha,td_hora,td_acciones);
+    tr.append(th,td_nombre,td_apellido,td_numCelular,td_correo,td_fecha,td_hora);
 
     tbodyTablaClientes.append(tr);
 
@@ -175,17 +166,8 @@ const filtrarClientes = () =>{
         
             let td_hora = document.createElement('td');
             td_hora.innerHTML = data.hora;
-        
-            let td_acciones = document.createElement('td');
-            let buttonNotificar = document.createElement('button');
-            buttonNotificar.innerHTML = 'Notificar';
-            buttonNotificar.addEventListener('click', ()=>alert(`Notificacion enviado al correo ${data.correo}`))
-            let buttonConfirmar = document.createElement('button');
-            buttonConfirmar.innerHTML = 'Confirmar';
-            buttonConfirmar.addEventListener('click', ()=>alert(`Cita confirmada`))
-            td_acciones.append(buttonNotificar,buttonConfirmar)
-        
-            tr.append(th,td_nombre,td_apellido,td_numCelular,td_correo,td_fecha,td_hora,td_acciones);
+                
+            tr.append(th,td_nombre,td_apellido,td_numCelular,td_correo,td_fecha,td_hora);
         
             tbodyFilter.append(tr);
     

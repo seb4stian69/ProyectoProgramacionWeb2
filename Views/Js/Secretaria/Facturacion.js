@@ -17,6 +17,7 @@ let clientesEncontrandos = [
         fecha: "26-07-2022",
         hora:"12:00",
         dataServicio:{
+            cantidad: 2,
             codServicio: 1,
             nombreServicio:"Rayos x",
             descripcion: "Se hizo rayos x",
@@ -34,6 +35,7 @@ let clientesEncontrandos = [
         fecha: "26-07-2022",
         hora:"12:00",
         dataServicio:{
+            cantidad: 2,
             codServicio: 2,
             nombreServicio:"Masaje muscular",
             descripcion: "Se hizo masaje",
@@ -51,6 +53,7 @@ let clientesEncontrandos = [
         fecha: "26-07-2022",
         hora:"12:00",
         dataServicio:{
+            cantidad: 2,
             codServicio: 3,
             nombreServicio:"Vision",
             descripcion: "descripcion",
@@ -68,6 +71,7 @@ let clientesEncontrandos = [
         fecha: "26-07-2022",
         hora:"12:00",
         dataServicio:{
+            cantidad: 2,
             codServicio: 4,
             nombreServicio:"Servicio x",
             descripcion: "Descripcion nueva",
@@ -85,6 +89,7 @@ let clientesEncontrandos = [
         fecha: "26-07-2022",
         hora:"12:00",
         dataServicio:{
+            cantidad: 2,
             codServicio: 5,
             nombreServicio:"Servicio no se que mas",
             descripcion: "Descripcion de nuevo",
@@ -102,6 +107,7 @@ let clientesEncontrandos = [
         fecha: "26-07-2022",
         hora:"12:00",
         dataServicio:{
+            cantidad: 2,
             codServicio: 6,
             nombreServicio:"Otro intento no se",
             descripcion: "Ultimo servicio quemado",
@@ -147,7 +153,8 @@ const generarFacturacion = () => {
         document.getElementById("codigoServicio").innerHTML = clienteEncontrado[0].dataServicio.codServicio;
         document.getElementById("nombreServicio").innerHTML = clienteEncontrado[0].dataServicio.nombreServicio;
         document.getElementById("descripcion").innerHTML = clienteEncontrado[0].dataServicio.descripcion;
-        document.getElementById("precio").innerHTML = clienteEncontrado[0].dataServicio.precio;
+        document.getElementById("cantidad").innerHTML = clienteEncontrado[0].dataServicio.cantidad;
+        document.getElementById("precio").innerHTML = (clienteEncontrado[0].dataServicio.precio*clienteEncontrado[0].dataServicio.cantidad);
 
     }
 
