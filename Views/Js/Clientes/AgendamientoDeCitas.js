@@ -5,6 +5,11 @@ let tr_id = 0;
 const agregarCitas=()=>{
 
     let fechaCita = document.getElementById("fechaCita").value
+    fechaCita = fechaCita.split('T')
+    
+    let horaCita = fechaCita[1]
+    fechaCita = fechaCita[0]
+
     let trid = tr_id
 
     let tbody = document.getElementById("citasTabla")
@@ -14,6 +19,10 @@ const agregarCitas=()=>{
     let th = document.createElement('th');
     th.scope = "row"
     th.innerHTML = fechaCita
+
+    let th_hora = document.createElement('td');
+    th_hora.scope = "row"
+    th_hora.innerHTML = horaCita
 
     let td_3 = document.createElement("td")
     
@@ -27,7 +36,7 @@ const agregarCitas=()=>{
 
     td_3.append(buttonEliminar,buttonActualizar)
 
-    tr.append(th,td_3)
+    tr.append(th,th_hora,td_3)
 
     tbody.append(tr)
 
@@ -39,7 +48,10 @@ const agregarCitas=()=>{
 
 const actualizarDocumento=(fecha,trid)=>{
 
-    document.getElementById("fechaCita").value = fecha
+
+    const valueFecha = fecha.split('T')
+
+    document.getElementById("fechaCita").value = valueFecha[0] 
 
     console.log("trid"+trid)
 
