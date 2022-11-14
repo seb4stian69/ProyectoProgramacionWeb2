@@ -1,1 +1,0 @@
-export const route_ingresarPanel = './panel.html';

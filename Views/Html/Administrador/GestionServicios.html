@@ -34,9 +34,12 @@
 
     <div>
       <div style="display:flex;">
-        <div>Categorías</div>
-        <div><input id="categoriasText" type="text" style="width:45em ;margin-left: 2.5em;"></div>
-
+        <div>Categoria</div>
+        <div><select id="categoriasText" type="text" style="width:45em ;margin-left: 1.9em;"></select></div>
+      </div><br>
+      <div style="display:flex;">
+        <div>Nombre</div>
+        <div><input id="nombreText" type="text" style="width:45em ;margin-left: 2.5em;"></div>
       </div>
       <div style="display:flex;margin-top: 2em;">
         <div>descripción</div>
@@ -49,19 +52,23 @@
 
     <div>
 
+      <!-- Agregar elementos OJO -->
       <div style="display: flex ;">
 
         <div style="margin-right: 2em ;">Elementos</div>
         <input id="elementosText" type="text">
 
-        <div style="margin-left: 5em;margin-right: 2em ;"">Costos</div>
-        <input onchange="onCostChange()" id="costoElementoText" type="number">        
+        <div style="margin-left: 5em;margin-right: 2em ;"">Cantidad</div>
+        <input onchange="onCostChange()" id="costoElementoText" type="number">
+        
+        &emsp;&emsp; <button>Agregar</button>
       
       </div>
+      <!-- Agregar elementos OJO -->
       
       <div style="display: flex ;margin-top: 2em;">
       
-        <div style="margin-right: 1.8em ;">Costo Total</div>
+        <div style="margin-right: 4em ;">Costo</div>
         <input id="costoTotalText" type="text">
         
       </div>
@@ -94,10 +101,11 @@
     
     <thead>
       <tr>
-        <th scope="col">Categorias</th>
+        <th scope="col">Categoria</th>
         <th scope="col">Descripción</th>
+        <th scope="col">Nombre</th>
         <th scope="col">Elementos</th>
-        <th scope="col">Costo Total</th>
+        <th scope="col">Costo</th>
         <th scope="col">Porcentaje</th>
         <th scope="col">Precio</th>
         <th scope="col">Acciones</th>

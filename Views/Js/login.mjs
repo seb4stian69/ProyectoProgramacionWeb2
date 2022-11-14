@@ -1,3 +1,5 @@
-import { route_ingresarPanel } from "./routes.mjs";
+import {routesHtml} from './Routes/index.routes.mjs';
 
-document.getElementById('btnIngresar').addEventListener('click',()=>location.href=route_ingresarPanel)
+document.getElementById('btnIngresar').addEventListener('click',()=>{
+    location.href = routesHtml.routeLoginToPanel;
+});
