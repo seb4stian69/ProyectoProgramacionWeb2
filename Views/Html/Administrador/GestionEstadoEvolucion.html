@@ -14,7 +14,7 @@
         </div>
         
         <div class="recordatorio">
-            <a class="navbar-brand" href="#">Estado de evolución por Sesión </a>
+            <a class="navbar-brand" href="#">Definir regla de evolución </a>
         </div>
 
         <div class="sec">
@@ -28,27 +28,6 @@
         
     </nav>
     <div style="border:1px solid gray ;padding:4em;margin-right: 30em ;margin-left: 20em;margin-top: 5em;">
-        <form class="form-buscar" action="">
-        
-            <div >
-                <h3>Buscar</h3>
-                
-                <div class="contenedor-buscador">
-                    <div class="Buscador" style="border:1px;">
-                        <input id="idCliente" type="text" placeholder="Numero identificación Cliente " class="busca" style="border:1px solid gray">
-                        
-                    </div>
-                    
-                </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="numSesion" type="number" placeholder="Numero Sesión " class="busca" style="border:1px solid gray">
-                    
-                </div>
-                <div style="border:1px;margin-top: 2em;">
-                    <button onclick="busqueda()" type="button" class="btn btn-secondary" style="width:20%;">Buscar</button> 
-                </div>
-            </div>
-        </form>
         
         <form class="form-buscar" action="">
             <div >
@@ -56,53 +35,65 @@
 
                     
                     <div class="Buscador" style="border:1px;">
-                        
-                        <input id="numeroId"type="text" placeholder="Numero identificación " class="busca" style="border:1px solid gray">
+                        Presión arterial diastólica
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="sube">Sube</option>
+                            <option value="baja">Baja</option>
+                           
+                          </select>
                         
                     </div>
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="numSesions"type="number" placeholder="Numero de Sesión " class="busca" style="border:1px solid gray">
+                   
+                    Presión arterial sistólica
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="sube">Sube</option>
+                        <option value="baja">Baja</option>
+                       
+                      </select>
+                    
+                 </div>
+                    
+                </div>
+                <div class="contenedor-buscador">
+
+                    
+                    <div class="Buscador"  style="border:1px;margin-top: 2em">
+                        Peso
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="sube">Sube</option>
+                            <option value="baja">Baja</option>
+                           
+                          </select>
+                        
+                    </div>
                     
                 </div>
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="nombre"type="text" placeholder="Nombre " class="busca" style="border:1px solid gray">
+                   
+                    Evolución 
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="positiva">Positiva</option>
+                        <option value="negativa">Baja</option>
+                       
+                      </select>
                     
                 </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="apellidos"type="text" placeholder="Apellidos " class="busca" style="border:1px solid gray">
                     
-                </div> 
                 <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="peso"type="text" placeholder="Peso " class="busca" style="border:1px solid gray">
-                    
-                </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="derivacion"type="text" placeholder="Derivación " class="busca" style="border:1px solid gray">
-                    
-                </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="diagnostico"type="text" placeholder="Diagnostico " class="busca" style="border:1px solid gray">
+                   
+                    Servicio 
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="positiva">Servicio #1</option>
+                        <option value="negativa">Servicio #2</option>
+                       
+                      </select>
                     
                 </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="resultados"type="text" placeholder="Resultados " class="busca" style="border:1px solid gray">
-                    
                 </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="presionaArterial"type="text" placeholder="Presión Arterial " class="busca" style="border:1px solid gray">
-                    
-                </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="tipoServicio"type="text" placeholder="Tipo de servicio " class="busca" style="border:1px solid gray">
-                    
-                </div>
-                <div class="Buscador" style="border:1px;margin-top: 2em;">
-                    <input id="descripcion"type="text" placeholder="Descripción " class="busca" style="border:1px solid gray">
-                    
-                </div>
-                
+               
                 
                 
                 <!-- <div style="border:1px;margin-top: 2em;">

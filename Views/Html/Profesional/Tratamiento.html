@@ -29,33 +29,35 @@
     </nav>
 
     <form class="formulario-historial-clinico">
-      <input id="idCliente" type="text" name="" id="" placeholder="Numero de identidicador" style="width: 70% ; margin-left: 10em;">
-
-      <div style="display: flex ;">
-        <input id="nombres" type="text" name="" id="" placeholder="Nombres" style="width: 30% ; margin-left: 10em;margin-top: 2em;">
-        <input id="apellidos" type="text" name="" id="" placeholder="Apellido" style="width: 30% ; margin-left: 8em;margin-top: 2em;">
-      </div>
-      <div style="display: flex ;">
-        <input id="edad" type="text" name="" id="" placeholder="Edad" style="width: 30% ; margin-left: 10em;margin-top: 2em;">
-        <input id="peso" type="text" name="" id="" placeholder="Peso" style="width: 30% ; margin-left: 8em;margin-top: 2em;">
-      </div>
-      <input id="correo" type="text" name="" id="" placeholder="Correo Electrónico" style="width: 70% ; margin-left: 10em; margin-top: 2em;">
-
-      <div style="margin-left:10em; margin-top: -1.4em;">
-        <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
-      </div>
-
-      <input id="detallesServicio" type="text" name="" id="" placeholder="Detalles de Servicio" style="width: 70% ; margin-left: 10em;height: 8em;margin-top: 2em;">
-
-      <div style="display: flex ;">
-        <input id="numeroSesiones" type="text" name="" id="" placeholder="Número de Sesiones" style="width: 30% ; margin-left: 10em;margin-top: 2em;">
-        <input id="numeroSesionesFaltantes" type="text" name="" id="" placeholder="Número de Seseiones faltantes" style="width: 30% ; margin-left: 8em;margin-top: 2em;">
+      <input id="idCliente" type="number" name="" id="" placeholder="Numero de Identificacion Cliente" style="width: 70% ; margin-left: 10em;">
+      <div class="datos-paciente">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"style="width: 70% ; margin-left: 8em;">
+          <option selected>Tipo Identificacion</option>
+          <option value="1">CC</option>
+          <option value="2">TI</option></select>
         
+    <div>
+      <div class="datos-paciente">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"style="width: 70% ; margin-left: 8em;">
+          <option selected>Diagnsoticos encontrados</option>
+          <option value="1">Diagnostico #1</option>
+          <option value="2">Diagnostico #2</option></select>
+        
+    <div>
+      <input id="idCliente" type="number" name="" id="" placeholder="Peso" style="width: 70% ; margin-left: 10em;margin-top: 2em;">
+      <input id="idCliente" type="number" name="" id="" placeholder="Presion diastolica" style="width: 70% ; margin-left: 10em;margin-top: 2em;">
+      <input id="idCliente" type="number" name="" id="" placeholder="Presion Isotolica" style="width: 70% ; margin-left: 10em;margin-top: 2em;">
+
       </div>
+      <input id="correo" type="text" name="" id="" placeholder="Numero Sesión" style="width: 70% ; margin-left: 10em; margin-top: 2em;">
+
+  
             
       </div>
       <input onclick="enviarTratamiento()" type="button" style="display:flex;margin-top: 2em; margin-left: 20em;width: 30em;" type="button" class="btn btn-secondary" value="Enviar">
     </form>
+    <input id="correo" type="text" name="" id="" placeholder="Evilución" style="width: 70% ; margin-left: 10em; margin-top: 2em;">
+
     <script src="../../Js/Profesional/Tratamiento.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>

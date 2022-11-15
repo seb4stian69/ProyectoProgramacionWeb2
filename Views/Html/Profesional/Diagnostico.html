@@ -33,7 +33,16 @@
 
     </style>
     <form action="" class="formulario-historial-clinico">
-      
+      <div>
+        <div class="datos-paciente">
+          <input type="text" placeholder="Identificador cliente" class="data-paciente" >
+        </div>
+      <div class="datos-paciente">
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Tipo Identificacion</option>
+            <option value="1">CC</option>
+            <option value="2">TI</option></select>
+          
       <div>
         <div class="datos-paciente">
           <input type="text" placeholder="Peso" class="data-paciente" >
@@ -45,11 +54,18 @@
           <input type="text" placeholder="Diagnostico" class="data-paciente">
         </div>
         <div class="datos-paciente">
-          <input type="text" placeholder="datos médicos" class="data-paciente" >
+          <input type="text" placeholder="Derivacion" class="data-paciente" >
         </div>
         <div class="datos-paciente">
-          <input type="text" placeholder="servicios Requeridos" class="data-paciente">
-          <input type="submit" placeholder="servicios Requeridos" class="data-paciente" value="Añadir">
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Servicio requerido</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          
+          
+         
         </div>
         <div class="datos-paciente">
           <input type="text" placeholder="Numero de sesiones recomendadas" class="data-paciente">
