@@ -27,20 +27,19 @@
         </div>
         
     </nav>
-    <form style="margin-left:40%;margin-top:5em;margin-bottom:5em;">
-        <input type="submit" value="Consultar" class="btn btn-secondary" style="width:20%">
-
-    </form>
+    
+    <h2  style="margin-top:2em ;">Diagnostico Inicial</h2>
     <table class="table table-striped table-light" style="width:95%;border:1px solid;margin-top:5em ; ">
 
       <thead>
         <tr>
           <th scope="col">Numero consultas recomendadas</th>
           <th scope="col">Peso</th>
-          <th scope="col">Presion Arterial</th>
+          <th scope="col">Presion sistólica</th>
+          <th scope="col">Presion diastólica</th>
           <th scope="col">Diagnostico </th>
           <th scope="col">Derivacion</th>
-          <th scope="col">Resultados</th>
+          <th scope="col">Servicio</th>
         </tr>
       </thead>
 
@@ -51,12 +50,43 @@
           <td id="nombreServicio"></td>
           <td id="descripcion"></td>
           <td id="precio"></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
 
       </tbody>
 
     </table>
+     
+    <h2  style="margin-top:2em ;">Tratamiento</h2>
+    <table class="table table-striped table-light" style="width:95%;border:1px solid;margin-top:5em ; ">
+
+      <thead>
+        <tr>
+          <th scope="col">Numero consultas</th>
+          <th scope="col">Peso</th>
+          <th scope="col">Presion sistólica</th>
+          <th scope="col">Presion diastólica</th>
+          <th scope="col">Evolución</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td id="codigoServicio"></td>
+          <td id="nombreServicio"></td>
+          <td id="descripcion"></td>
+          <td id="precio"></td>
+          <td></td>
     
+        
+        </tr>
+
+      </tbody>
+
+    </table>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
