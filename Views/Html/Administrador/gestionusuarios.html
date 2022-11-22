@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <title>Secretaria</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="logo">
+            <a class="navbar-brand" href="#">ACME</a>
+        </div>
+        
+        <div class="recordatorio">
+            <a class="navbar-brand" href="#">Generar Historial Clinico </a>
+        </div>
+
+        <div class="sec">
+            <a class="navbar-brand" href="menu.html">Administrador </a>
+        </div>
+        
+        <div>
+            <a class="navbar-brand" href="../login.html">Cerrar Sesión </a>
+        </div>
+        
+    </nav>
+    
+    <form class="formulario-historial-clinico">
+
+        <div style="display:flex">
+
+            <div>
+
+                <h2>Datos del empleado </h3>
+
+                <div style="display:flex;margin-top:2em">
+
+                    <div style="margin-right:1em">
+                        <select onchange="cambiarTipoId()" id="selectTipoIdField" name="select" style="margin-top:4%"></select>
+                    </div>
+                    <div>
+                        <input id="textNumeroIdField" style="width:28.5em"type = "text" placeholder="Número de identificación">
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div style="margin-top: 2em;">
+                        <input id="textNombresField" type = "text" placeholder="Nombres">
+                        <input id="textApellidosField" type = "text" placeholder="Apellidos" >      
+                    </div>
+
+                    <div class="datos-paciente">
+                        <input id="textDireccionResidenciaField" class="data-paciente" type = "text" placeholder="Dirección de Residencia">
+                    </div>
+
+                    <div class="datos-paciente">
+                        <input id="textNumeroCelularField" class="data-paciente"  type = "text" placeholder="Número de Celular ">
+                    </div>
+
+                    <div class="datos-paciente">
+                        <input id="textCorreoField" class="data-paciente"  type = "text" placeholder="Correo Electrónico">
+                    </div>
+                    <select class="form-select" aria-label="Default select example" style="margin-top: 2em;margin-bottom: 2em;">
+                   
+                        <option value="1">Secretaria</option>
+                        <option value="2">Gerente</option>
+                      </select>
+                    
+
+                 
+                    <button onclick="enviarDatosDelPaciente()" type="button" class="btn btn-secondary" style="width:40%">Enviar</button>
+                    <button type="reset" class="btn btn-secondary" style="margin-left:19%;width:40%">Limpiar</button>
+
+                            
+                </div>
+    
+            </div>
+
+          
+            
+        </div>
+
+    </form>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../Js/Secretaria/GestionarHistorialClinico.js"></script>
+
+</body>
+</html>
