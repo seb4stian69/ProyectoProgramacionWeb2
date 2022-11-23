@@ -1,5 +1,7 @@
 <?php
 
+class ExperienciaLaboral{
+    
     private int $identificador
     private string $tipoindentificacion_profesional
     private int $numeroidentificacion_profesional
@@ -143,7 +145,7 @@
 
         return $this;
     }
-    }
+}
 
     
 
